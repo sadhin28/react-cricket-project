@@ -4,6 +4,7 @@ const Player = ({ allplayers,handelSelectedPlayers }) => {
     const {name,image_url,about,price}=(allplayers)
     return (
         <div>
+           
             <div className="card bg-base-100 w-96 shadow-sm">
                 <figure>
                     <img
