@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 const Player = ({ allplayers }) => {
-    const {name,image_url,rating,price}=(allplayers)
+    const {name,image_url,about,price}=(allplayers)
     return (
         <div>
             <div className="card bg-base-100 w-96 shadow-sm">
@@ -17,7 +17,7 @@ const Player = ({ allplayers }) => {
                     <FontAwesomeIcon icon={faUser} />{name}
                         <div className="badge badge-secondary">Price: {price}</div>
                     </h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <p>{about}</p>
                     <div className="card-actions justify-end">
                        
                         <button className="btn badge badge-outline p-5">Choose Player</button>
