@@ -1,8 +1,8 @@
 import AllPlayers from '../AllPlayers/AllPlayers';
 import SelectedPlayers from '../SelectedPlayers/SelectedPlayers';
 import './AvailablePlayer.css'
-const AvailablePlayers = ({handleisActive,isactive,allplayers,handelSelectedPlayers,selectedPlayer}) => {
-    console.log(selectedPlayer)
+const AvailablePlayers = ({handleisActive,isactive,allplayers,handelSelectedPlayers,selectedPlayer,handelDelatePlayer}) => {
+    // console.log(selectedPlayer)
     return (
         <div className='mx-5' >
             <div className="  mt-10 mb-10 flex  font-black justify-between text-sm lg:text-2xl md:text-xl">
@@ -19,7 +19,7 @@ const AvailablePlayers = ({handleisActive,isactive,allplayers,handelSelectedPlay
             </div>
             <div className='lg:grid md:grid'>
                 {
-                    isactive.available?<AllPlayers key={allplayers.id} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers}></AllPlayers>:<SelectedPlayers  selectedPlayer={selectedPlayer}></SelectedPlayers>
+                    isactive.available?<AllPlayers key={allplayers.id} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers}></AllPlayers>:<SelectedPlayers key={selectedPlayer.id} handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer}></SelectedPlayers>
                 }
             </div>
         </div>

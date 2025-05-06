@@ -38,11 +38,11 @@ function App() {
  },[])
   //increment Claim free credit
   const [freeClaim,setfreeClaim]=useState(0)
-
   const handelfreeClaim=()=>{
     const newfreeclaim=freeClaim + 50000;
     setfreeClaim(newfreeclaim)
   }
+  
 
   //button goggle 
   const [isactive,setisactive]=useState({
@@ -75,14 +75,23 @@ function App() {
       })
    },[])
    //handel selected player
+   const handelDelatePlayer =(id)=>{
+    
+       const newPlayer=selectedPlayer.filter((p)=>p.id !== id);
+       setSelectedPlayer(newPlayer)
+   }
+ 
+   
    const [selectedPlayer,setSelectedPlayer]=useState([]);
-
+   
+    console.log(selectedPlayer)
    const handelSelectedPlayers =(Player)=>{
     const isexist = selectedPlayer.find(p=>p.id == Player.id);
+   
     if(isexist){
       toast.error('Alrady Selected This Player');
     }else{
-
+      
       const newselectedPlayer =[...selectedPlayer,Player] ;
       setSelectedPlayer(newselectedPlayer)
     }
@@ -93,7 +102,7 @@ function App() {
     <div className='max-w-11/12 mx-auto'>
        <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
        <HeroSection heroPhoto={heroPhoto}  handelfreeClaim={handelfreeClaim}></HeroSection>
-       <AvailablePlayers selectedPlayer={selectedPlayer}  handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
+       <AvailablePlayers handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer}  handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
        
     </div>
   )

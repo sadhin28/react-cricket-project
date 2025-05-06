@@ -1,5 +1,5 @@
 
-const SelectPlayer = ({selectPlayer}) => {
+const SelectPlayer = ({selectPlayer,handelDelatePlayer}) => {
    const {name,image_url,about,id}=(selectPlayer)
 
     return (
@@ -14,7 +14,7 @@ const SelectPlayer = ({selectPlayer}) => {
                         </div>
                     </div>
                     <div class="justify-end card-actions">
-                        <button class="btn btn-primary">Delate</button>
+                        <button onClick={()=>handelDelatePlayer(id)} class="btn btn-primary">Delate</button>
                     </div>
                 </div>
             </div>
