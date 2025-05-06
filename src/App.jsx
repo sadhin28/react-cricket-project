@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import HeroSection from './Components/HeroSection/HeroSection'
 import Navbar from './Components/Navbar/Navbar'
+import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
 
 function App() {
 
@@ -42,12 +43,32 @@ function App() {
     setfreeClaim(newfreeclaim)
   }
 
+  //button goggle 
+  const [isactive,setisactive]=useState({
+    available :true,
+    Status:'available'
+   })
+   
+   //handel button 
+   const handleisActive =(Status)=>{
+      if(Status == 'available'){
+        setisactive({
+           available :true,
+          Status:'available'
+        })
+      }else{
+        setisactive({
+           available :false,
+           Status:'selected'
+        })
+      }
+   }
   return (
     <div className='max-w-11/12 mx-auto'>
        <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
-       <div className=''>
-          <HeroSection heroPhoto={heroPhoto}  handelfreeClaim={handelfreeClaim}></HeroSection>
-       </div>
+       <HeroSection heroPhoto={heroPhoto}  handelfreeClaim={handelfreeClaim}></HeroSection>
+       <AvailablePlayers isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
+       
     </div>
   )
 }
