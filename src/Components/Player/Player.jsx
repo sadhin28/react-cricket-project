@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-const Player = ({ allplayers }) => {
+const Player = ({ allplayers,handelSelectedPlayers }) => {
     const {name,image_url,about,price}=(allplayers)
     return (
         <div>
@@ -20,7 +20,7 @@ const Player = ({ allplayers }) => {
                     <p>{about}</p>
                     <div className="card-actions justify-end">
                        
-                        <button className="btn badge badge-outline p-5">Choose Player</button>
+                        <button onClick={()=>handelSelectedPlayers(allplayers)} className="btn badge badge-outline p-5">Choose Player</button>
                     </div>
                 </div>
             </div>

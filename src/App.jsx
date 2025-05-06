@@ -73,11 +73,20 @@ function App() {
         setallplayers(players)
       })
    },[])
+   //handel selected player
+   const [selectedPlayer,setSelectedPlayer]=useState([]);
+
+   const handelSelectedPlayers =(Player)=>{
+      
+    const newselectedPlayer =[...selectedPlayer,Player] ;
+    setSelectedPlayer(newselectedPlayer)
+
+   }
   return (
     <div className='max-w-11/12 mx-auto'>
        <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
        <HeroSection heroPhoto={heroPhoto}  handelfreeClaim={handelfreeClaim}></HeroSection>
-       <AvailablePlayers allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
+       <AvailablePlayers selectedPlayer={selectedPlayer}  handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
        
     </div>
   )
