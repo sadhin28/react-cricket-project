@@ -2,7 +2,7 @@
 const Navbar = () => {
     return (
         <div className="">
-            <div class="sticky  navbar bg-base-300 font-bold flex justify-between px-10 text-sm lg:text-1xl md:text-1xl">
+            <div class="sticky top-0 rounded-b-3xl navbar bg-base-300 font-bold flex justify-between px-10 text-sm lg:text-2xl md:text-1xl">
                
                 <img className="w-12 lg:w-20 md:w-15" src="/src/assets/logo.png" alt="" />
                 
@@ -11,7 +11,7 @@ const Navbar = () => {
                         <li>Fixture</li>
                         <li>Teams</li>
                         <li>Schedules</li>
-                        <li className="flex">{0} coin <img
+                        <li className="flex border px-1 border-blue-700 rounded-3xl">{600} coin <img
                         className="w-6"
                          src="/src/assets/653278_coin_bitcoin_cash_currency_dollar_icon.ico" alt="" /></li>
                 </ul>
