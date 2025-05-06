@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import HeroSection from './Components/HeroSection/HeroSection'
 import Navbar from './Components/Navbar/Navbar'
@@ -11,9 +11,18 @@ function App() {
     const newfreeclaim=freeClaim + 50000;
     setfreeClaim(newfreeclaim)
   }
+  //fetch json file
+  const [allimg,setAllimg]=useState([]);
+  useEffect(()=>{
+     fetch('Allimg.json')
+     .then(res=>res.json())
+     .then(images=>{
+        setAllimg(images)
+     })
+  },[])
   return (
     <div className='max-w-11/12 mx-auto'>
-       <Navbar freeClaim={freeClaim}></Navbar>
+       <Navbar allimg={allimg} freeClaim={freeClaim}></Navbar>
        <div className=''>
           <HeroSection handelfreeClaim={handelfreeClaim}></HeroSection>
        </div>
