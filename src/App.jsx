@@ -3,7 +3,8 @@ import './App.css'
 import HeroSection from './Components/HeroSection/HeroSection'
 import Navbar from './Components/Navbar/Navbar'
 import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
 
     //fetch allimg json file
@@ -77,9 +78,15 @@ function App() {
    const [selectedPlayer,setSelectedPlayer]=useState([]);
 
    const handelSelectedPlayers =(Player)=>{
-      
-    const newselectedPlayer =[...selectedPlayer,Player] ;
-    setSelectedPlayer(newselectedPlayer)
+    const isexist = selectedPlayer.find(p=>p.id == Player.id);
+    if(isexist){
+      toast.error('Alrady Selected This Player');
+    }else{
+
+      const newselectedPlayer =[...selectedPlayer,Player] ;
+      setSelectedPlayer(newselectedPlayer)
+    }
+
 
    }
   return (

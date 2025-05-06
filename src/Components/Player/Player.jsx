@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer } from 'react-toastify';
 const Player = ({ allplayers,handelSelectedPlayers }) => {
     const {name,image_url,about,price}=(allplayers)
     return (
@@ -22,7 +23,9 @@ const Player = ({ allplayers,handelSelectedPlayers }) => {
                     <div className="card-actions justify-end">
                        
                         <button onClick={()=>handelSelectedPlayers(allplayers)} className="btn badge badge-outline p-5">Choose Player</button>
+                       
                     </div>
+                    <ToastContainer position='top-center'/>
                 </div>
             </div>
         </div>
