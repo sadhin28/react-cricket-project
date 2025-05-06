@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='max-w-11/12 mx-auto'>
        <Navbar></Navbar>
-       <div className='mx-auto w-11/12 rounded-3xl mt-10'>
+       <div className=''>
           <HeroSection></HeroSection>
        </div>
     </div>
