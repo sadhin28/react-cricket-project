@@ -20,7 +20,7 @@ const Player = ({ allplayers }) => {
                     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                     <div className="card-actions justify-end">
                        
-                        <button className="btn badge badge-outline">Choose Player</button>
+                        <button className="btn badge badge-outline p-5">Choose Player</button>
                     </div>
                 </div>
             </div>
