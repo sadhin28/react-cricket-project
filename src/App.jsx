@@ -12,7 +12,7 @@ function App() {
     setfreeClaim(newfreeclaim)
   }
   //fetch json file
-  const [allimg,setAllimg]=useState([]);
+  const [allimg,setAllimg]=useState(arguments);
   useEffect(()=>{
      fetch('Allimg.json')
      .then(res=>res.json())
