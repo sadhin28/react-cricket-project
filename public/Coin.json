@@ -1,5 +1,9 @@
 [
     {
-        "coin":"https://i.postimg.cc/k44PJ7nL/dollar.png"
+        "coin":"https://i.postimg.cc/k44PJ7nL/dollar.png",
+    
+        "footer_logo":"https://i.postimg.cc/Hx1ZcVLK/logo-footer.png"
+        
     }
+
 ]

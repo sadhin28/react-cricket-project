@@ -8,6 +8,8 @@ function App() {
     //fetch allimg json file
     const [allimg,setAllimg]=useState(arguments);
     const [coins,setCoins]=useState(arguments);
+    const [heroPhoto,setheroPhoto]=useState(arguments);
+    //fetch all img
     useEffect(()=>{
        fetch('Allimg.json')
        .then(res=>res.json())
@@ -16,7 +18,7 @@ function App() {
          
        })
     },[])
-    
+    //fetch coind img
    useEffect(()=>{
      fetch('Coin.json')
      .then(res=>res.json())
@@ -24,7 +26,14 @@ function App() {
         setCoins(coin)
      })
    },[])
-
+ //fetch hero img
+ useEffect(()=>{
+    fetch('HreoPhoto.json')
+    .then(res=>res.json())
+    .then(heroimg=>{
+      setheroPhoto(heroimg)
+    })
+ },[])
   //increment Claim free credit
   const [freeClaim,setfreeClaim]=useState(0)
 
@@ -37,7 +46,7 @@ function App() {
     <div className='max-w-11/12 mx-auto'>
        <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
        <div className=''>
-          <HeroSection  handelfreeClaim={handelfreeClaim}></HeroSection>
+          <HeroSection heroPhoto={heroPhoto}  handelfreeClaim={handelfreeClaim}></HeroSection>
        </div>
     </div>
   )
