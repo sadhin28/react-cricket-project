@@ -12,7 +12,7 @@ const Player = ({ allplayers }) => {
                         className='w-full h-70 object-fill'
                          />
                 </figure>
-                <div className="card-body">
+                <div className="card-body text-sm">
                     <h2 className="card-title">
                     <FontAwesomeIcon icon={faUser} />{name}
                         <div className="badge badge-secondary">Price: {price}</div>
@@ -20,7 +20,7 @@ const Player = ({ allplayers }) => {
                     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                     <div className="card-actions justify-end">
                        
-                        <div className="badge badge-outline">Products</div>
+                        <button className="btn badge badge-outline">Choose Player</button>
                     </div>
                 </div>
             </div>
