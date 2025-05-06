@@ -2,7 +2,7 @@
 const Navbar = () => {
     return (
         <div className="">
-            <div class=" items-center sticky top-0 rounded-b-3xl navbar bg-base-300 font-bold grid lg:flex lg:justify-between md:flex md:justify-between md:items-center px-10 text-sm lg:text-2xl md:text-1xl">
+            <div class=" items-center sticky top-0 rounded-b-2xl navbar bg-base-300 font-bold grid lg:flex lg:justify-between md:flex md:justify-between md:items-center px-10 text-sm lg:text-2xl md:text-1xl">
                
                 <img className="w-12 lg:w-20 md:w-15 mx-auto lg:mx-0 md:mx-0" src="/src/assets/logo.png" alt="" />
                 
