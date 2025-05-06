@@ -63,11 +63,21 @@ function App() {
         })
       }
    }
+   //Allplayers
+   const [allplayers,setallplayers]=useState([])
+   
+   useEffect(()=>{
+      fetch('AllPlayers.json')
+      .then(res=>res.json())
+      .then(players=>{
+        setallplayers(players)
+      })
+   },[])
   return (
     <div className='max-w-11/12 mx-auto'>
        <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
        <HeroSection heroPhoto={heroPhoto}  handelfreeClaim={handelfreeClaim}></HeroSection>
-       <AvailablePlayers isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
+       <AvailablePlayers allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
        
     </div>
   )

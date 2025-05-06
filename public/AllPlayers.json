@@ -4,69 +4,79 @@
       "name": "Shakib Al Hasan",
       "image_url": "https://i.pinimg.com/736x/3c/93/ea/3c93ea680fcc06213992f2e976e66235.jpg",
       "rating": 8,
-      "price": 8900
+      "price": 8900,
+       "about": "Shakib Al Hasan is a Bangladeshi international cricketer and former captain of the national team. He is widely regarded as one of the greatest all-rounders in the history of cricket. Shakib holds the record for being the first cricketer to be ranked the No.1 all-rounder in all three formats by the ICC."
     },
     {
       "id": 2,
       "name": "Mushfiqur Rahim",
       "image_url": "https://superstarsbio.com/wp-content/uploads/2018/08/Mushfiqur-Rahim.jpg",
       "rating": 7,
-      "price": 7400
+      "price": 7400,
+       "about": "Mushfiqur Rahim is a Bangladeshi cricketer and former captain of the national team. He is known for his aggressive batting style and has been a consistent performer for Bangladesh across all formats. Mushfiqur is also one of the most experienced players in the team."
     },
     {
       "id": 3,
       "name": "Mahmudullah",
       "image_url": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg/prd/assets/players/5612/3956.png",
       "rating": 6,
-      "price": 8500
+      "price": 8500,
+       "about": "Mahmudullah is a Bangladeshi cricketer known for his calm demeanor and finishing abilities. He has played crucial roles in many of Bangladesh's victories and is respected for his leadership qualities and experience."
     },
     {
       "id": 4,
       "name": "Mehidy Hasan Miraz",
       "image_url": "https://www.ipl.com/upload/20241017/7d93b86719213f4ed21c2b650f0f51d7.png",
       "rating": 7,
-      "price": 9000
+      "price": 9000,
+       "about": "Mehidy Hasan Miraz is a Bangladeshi all-rounder who plays as a right-handed batsman and right-arm off-break bowler. He has been instrumental in Bangladesh's spin attack and has contributed significantly with the bat in the lower order."
     },
     {
       "id": 5,
       "name": "Mustafizur Rahman",
       "image_url": "https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/319700/319734.png",
       "rating": 6,
-      "price": 8000
+      "price": 8000,
+        "about": "Mustafizur Rahman, also known as 'The Fizz', is a Bangladeshi left-arm fast-medium bowler renowned for his off-cutters and variations. He made a sensational debut in 2015, taking 11 wickets in his first two ODIs against India, a record in cricket history."
     },
     {
       "id": 6,
       "name": "Liton Das",
       "image_url": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200/lsci/db/PICTURES/CMS/319700/319727.png",
       "rating": 5,
-      "price": 6700
+      "price": 6700,
+      "about": "Liton Das is a Bangladeshi wicket-keeper batsman known for his elegant stroke play. He holds the record for the highest individual score by a Bangladeshi batsman in ODIs, scoring 176 runs against Zimbabwe."
     },
     {
       "id": 7,
       "name": "Taskin Ahmed",
       "image_url": "https://th.bing.com/th/id/OIP.aRAUTISGx1VJ-CihGlJcRwHaHa?rs=1&pid=ImgDetMain",
       "rating": 6,
-      "price": 4500
+      "price": 4500,
+      "about": "Taskin Ahmed is a Bangladeshi right-arm fast bowler known for his pace and aggression. He has been a key figure in Bangladesh's pace attack and has delivered match-winning performances in various formats."
     },
     {
       "id": 8,
       "name": "Najmul Hossain Shanto",
       "image_url": "https://www.thenews.com.pk/assets/uploads/akhbar/2024-02-14/1157351_9453118_SHanto_akhbar.jpg",
       "rating": 4,
-      "price": 6000
+      "price": 6000,
+       "about": "Najmul Hossain Shanto is a Bangladeshi top-order batsman and the current captain of the national team in Test and ODI formats. He has shown promise with several significant innings and is considered a future star for Bangladesh."
     },
     {
       "id": 9,
       "name": "Tanzid Hasan",
       "image_url": "https://cricreads.com/wp-content/uploads/2023/10/images-2023-10-10T135031.841.jpeg",
       "rating": 2,
-      "price": 5000
+      "price": 5000,
+       "about": "Tanzid Hasan is a young Bangladeshi cricketer who has represented the national team in various formats. He is known for his aggressive batting style and has been a part of Bangladesh's youth development programs."
     },
     {
       "id": 10,
       "name": "Towhid Hridoy",
       "image_url": "https://api.bdcrictime.com/hridoy-with-cap-18_09_2023.jpg",
       "rating": 5,
-      "price": 4000
+      "price": 4000,
+      "about": "Towhid Hridoy is a Bangladeshi middle-order batsman who has shown potential in domestic and international cricket. He is known for his composure at the crease and ability to build innings under pressure."
     }
   ]
