@@ -1,3 +1,4 @@
+
 const Navbar = () => {
     return (
         <div className="">
@@ -10,7 +11,7 @@ const Navbar = () => {
                         <li>Fixture</li>
                         <li>Teams</li>
                         <li>Schedules</li>
-                        <li>{0} coin</li>
+                        <li>{0} coin <img src="/src/assets/653278_coin_bitcoin_cash_currency_dollar_icon.ico" alt="" /></li>
                 </ul>
                
             </div>
