@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "Shakib Al Hasan",
+      "image_url": "https://i.pinimg.com/736x/3c/93/ea/3c93ea680fcc06213992f2e976e66235.jpg",
+      "rating": 8,
+      "price": 8900
+    },
+    {
+      "id": 2,
+      "name": "Mushfiqur Rahim",
+      "image_url": "https://superstarsbio.com/wp-content/uploads/2018/08/Mushfiqur-Rahim.jpg",
+      "rating": 7,
+      "price": 7400
+    },
+    {
+      "id": 3,
+      "name": "Mahmudullah",
+      "image_url": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg/prd/assets/players/5612/3956.png",
+      "rating": 6,
+      "price": 8500
+    },
+    {
+      "id": 4,
+      "name": "Mehidy Hasan Miraz",
+      "image_url": "https://www.ipl.com/upload/20241017/7d93b86719213f4ed21c2b650f0f51d7.png",
+      "rating": 7,
+      "price": 9000
+    },
+    {
+      "id": 5,
+      "name": "Mustafizur Rahman",
+      "image_url": "https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/319700/319734.png",
+      "rating": 6,
+      "price": 8000
+    },
+    {
+      "id": 6,
+      "name": "Liton Das",
+      "image_url": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200/lsci/db/PICTURES/CMS/319700/319727.png",
+      "rating": 5,
+      "price": 6700
+    },
+    {
+      "id": 7,
+      "name": "Taskin Ahmed",
+      "image_url": "https://th.bing.com/th/id/OIP.aRAUTISGx1VJ-CihGlJcRwHaHa?rs=1&pid=ImgDetMain",
+      "rating": 6,
+      "price": 4500
+    },
+    {
+      "id": 8,
+      "name": "Najmul Hossain Shanto",
+      "image_url": "https://www.thenews.com.pk/assets/uploads/akhbar/2024-02-14/1157351_9453118_SHanto_akhbar.jpg",
+      "rating": 4,
+      "price": 6000
+    },
+    {
+      "id": 9,
+      "name": "Tanzid Hasan",
+      "image_url": "https://cricreads.com/wp-content/uploads/2023/10/images-2023-10-10T135031.841.jpeg",
+      "rating": 2,
+      "price": 5000
+    },
+    {
+      "id": 10,
+      "name": "Towhid Hridoy",
+      "image_url": "https://api.bdcrictime.com/hridoy-with-cap-18_09_2023.jpg",
+      "rating": 5,
+      "price": 4000
+    }
+  ]
