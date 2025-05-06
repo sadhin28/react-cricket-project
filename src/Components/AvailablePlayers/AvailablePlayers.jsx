@@ -12,7 +12,7 @@ const AvailablePlayers = ({handleisActive,isactive,allplayers}) => {
 
             </div>
             </div>
-            <div>
+            <div className='grid'>
                 {
                     isactive.available?<AllPlayers key={allplayers.id} allplayers={allplayers}></AllPlayers>:<SelectedPlayers></SelectedPlayers>
                 }
