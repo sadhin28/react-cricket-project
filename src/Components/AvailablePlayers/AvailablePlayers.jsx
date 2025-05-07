@@ -1,8 +1,9 @@
 import AllPlayers from '../AllPlayers/AllPlayers';
 import SelectedPlayers from '../SelectedPlayers/SelectedPlayers';
 import './AvailablePlayer.css'
-const AvailablePlayers = ({handleisActive,isactive,allplayers,handelSelectedPlayers,selectedPlayer,handelDelatePlayer}) => {
+const AvailablePlayers = ({handleisActive,isactive,allplayers,handelSelectedPlayers,selectedPlayer,handelDelatePlayer,handelAddmorePlayer}) => {
     // console.log(selectedPlayer)
+    // console.log(isactive)
     return (
         <div className=''>
             <div className="  mt-10 mb-10 flex  font-black justify-between text-sm lg:text-2xl md:text-xl">
@@ -21,7 +22,7 @@ const AvailablePlayers = ({handleisActive,isactive,allplayers,handelSelectedPlay
             </div>
             <div className='grid justify-center'>
                 {
-                    isactive.available?<AllPlayers key={allplayers.id} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers}></AllPlayers>:<SelectedPlayers key={selectedPlayer.id} handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer}></SelectedPlayers>
+                    isactive.available?<AllPlayers key={allplayers.id} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers}></AllPlayers>:<SelectedPlayers key={selectedPlayer.id} handleisActive={handleisActive} isactive={isactive} handelAddmorePlayer={handelAddmorePlayer}  handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer}></SelectedPlayers>
                 }
             </div>
         </div>

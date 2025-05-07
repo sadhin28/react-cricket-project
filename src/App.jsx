@@ -52,7 +52,7 @@ function App() {
     available: true,
     Status: 'available'
   })
-
+ 
   //handel button 
   const handleisActive = (Status) => {
     if (Status == 'available') {
@@ -123,7 +123,7 @@ function App() {
        <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
        </div>
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
-      <AvailablePlayers handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
+      <AvailablePlayers  handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
       <ToastContainer position='top-center'autoClose={1200}/>
     </div>
   
