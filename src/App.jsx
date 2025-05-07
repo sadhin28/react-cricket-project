@@ -3,7 +3,7 @@ import './App.css'
 import HeroSection from './Components/HeroSection/HeroSection'
 import Navbar from './Components/Navbar/Navbar'
 import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
 
@@ -41,9 +41,9 @@ function App() {
   const handelfreeClaim = () => {
 
     const newfreeclaim = freeClaim + 50000;
-
+    
     setfreeClaim(newfreeclaim)
-
+    toast.success("Claim Successfull")
   }
 
 
@@ -122,9 +122,9 @@ function App() {
       <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
       <AvailablePlayers handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
-
+      <ToastContainer position='top-center'autoClose={1200}/>
     </div>
-
+  
   )
 }
 

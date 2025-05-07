@@ -28,7 +28,7 @@ const Player = ({ allplayers,handelSelectedPlayers }) => {
                    
                 </div>
             </div>
-            <ToastContainer position='top-center'autoClose={1000}/>
+           
         </div>
     );
 };
