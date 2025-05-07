@@ -5,7 +5,7 @@ const SelectedPlayers = ({selectedPlayer,handelDelatePlayer}) => {
     return (
         <div className="">
            
-            <div className="grid grid-cols-1 gap-10">
+            <div className="">
                     {
                         selectedPlayer.map(selectPlayer=><SelectPlayer key={selectPlayer.id} handelDelatePlayer={handelDelatePlayer} selectPlayer={selectPlayer} ></SelectPlayer>)
                     }
