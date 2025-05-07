@@ -96,7 +96,7 @@ function App() {
       toast.error('Alrady Selected This Player');
     } else {
       if (freeClaim == 0 && freeClaim < Player.price) {
-        toast.error("Claim free Credit and Chooes Players")
+        toast.error("Claim free Credit Then Chooes Players")
       }
       else {
         setfreeClaim(freeClaim - Player.price)
