@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar'
 import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
 import { toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Components/Footer/Footer';
 function App() {
 
   //fetch allimg json file
@@ -116,6 +117,7 @@ function App() {
 
 
   }
+
   return (
     <div className='max-w-11/12 mx-auto'>
 
@@ -124,6 +126,10 @@ function App() {
        </div>
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
       <AvailablePlayers  handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
+      <Footer coins={coins}></Footer>
+      
+      
+      
       <ToastContainer position='top-center'autoClose={1200}/>
     </div>
   
