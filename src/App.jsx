@@ -119,7 +119,9 @@ function App() {
   return (
     <div className='max-w-11/12 mx-auto'>
 
-      <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
+       <div className='sticky top-0 z-60'>
+       <Navbar allimg={allimg} coins={coins} freeClaim={freeClaim}></Navbar>
+       </div>
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
       <AvailablePlayers handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
       <ToastContainer position='top-center'autoClose={1200}/>

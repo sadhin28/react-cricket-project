@@ -3,8 +3,8 @@ const Navbar = ({freeClaim,allimg,coins}) => {
     const [coin]=coins
 
       return(
-        <div>
-            <div className="gap-5 md:h-35 place-items-center px-6 items-center  rounded-b-2xl navbar bg-base-300 font-bold grid lg:flex lg:justify-between md:flex md:justify-between md:items-center lg:text-2xl md:text-1xl">
+        <div className="">
+            <div className="gap-5 md:h-35 place-items-center px-6 items-center navbar bg-base-300 font-bold grid lg:flex lg:justify-between md:flex md:justify-between md:items-center lg:text-2xl md:text-1xl">
                
                 <img className="w-12 lg:w-20 md:w-15 mx-auto lg:mx-0 md:mx-0" src={logo.logo} alt="" />
                 
