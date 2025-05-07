@@ -4,7 +4,7 @@ const Subscribe = () => {
         <div id='subscribe' className='border border-blue-300
           h-79  w-9/12 mx-auto rounded-2xl object-cover
            relative top-37 bg-gray-100'>
-            <div class="grid gap-3 justify-center text-center my-10 font-black p-5">
+            <div className="grid gap-3 justify-center text-center my-10 font-black p-5">
 
                 <div className='grid gap-3'>
                 <h1 className='md:text-2xl'>Subscribe to our Newsletter</h1>
@@ -15,8 +15,8 @@ const Subscribe = () => {
                 <input
                     type="text"
                     placeholder="Subscribe By Email@"
-                    class="input rounded-tl-2xl rounded-bl-2xl md:w-100 p-8 input-bordered join-item text-black" />
-                <button class="btn rounded-tr-2xl rounded-br-2xl p-8 hover:bg-[#E7FE29] border-2  join-item">Subscribe</button>
+                    className="input rounded-tl-2xl rounded-bl-2xl md:w-100 p-8 input-bordered join-item text-black" />
+                <button className="btn rounded-tr-2xl rounded-br-2xl p-8 hover:bg-[#E7FE29] border-2  join-item">Subscribe</button>
                 </div>
 
             </div>
