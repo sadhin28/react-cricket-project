@@ -7,7 +7,7 @@ const SelectedPlayers = ({selectedPlayer,handelDelatePlayer,handleisActive,isact
     return (
         <div className="">
            
-            <div className="grid gap-10 mb-40">
+            <div className="grid gap-10">
                     {
                        isactive.available?'':selectedPlayer.map(selectPlayer=><SelectPlayer key={selectPlayer.id} handelDelatePlayer={handelDelatePlayer} selectPlayer={selectPlayer} ></SelectPlayer>)
                     }
