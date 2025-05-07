@@ -33,7 +33,7 @@ const Footer = ({ coins }) => {
                             <input
                                 type="text"
                                 placeholder="username@site.com"
-                                class="input input-bordered join-item" />
+                                class="input input-bordered join-item text-black" />
                             <button class="btn btn-primary join-item">Subscribe</button>
                         </div>
                     </fieldset>

@@ -17,7 +17,7 @@ const Player = ({ allplayers,handelSelectedPlayers }) => {
                 <div className="card-body text-sm">
                     <h2 className="card-title">
                     <FontAwesomeIcon icon={faUser} />{name}
-                        <div className="badge badge-secondary">Price: {price}</div>
+                        <div className="badge p-5 badge-secondary">Price: {price}</div>
                     </h2>
                     <p>{about}</p>
                     <div className="card-actions justify-end">
