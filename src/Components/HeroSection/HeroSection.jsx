@@ -3,7 +3,7 @@ import './HeroSection.css'
 const HeroSection = ({handelfreeClaim,heroPhoto}) => {
     const [heroimg]=heroPhoto
     return (
-        <div className='mt-10 text-center'>
+        <div className='mt-10 text-center '>
             <div className='flex  flex-col justify-center lg:max-w-330 md:max-w-200 mx-auto rounded-xl bg-blend-color-burn lg:h-100 md:h-80 h-60' id="heroSection">
                 <img className='w-40 lg:w-60 md:w-50 p-5 mx-auto' src={heroimg.heroimg} alt="" />
                 <h1 className='font-bold lg:text-2xl md:text-xl'><small>Assemble My Ultimate Dream 11 Cricket Team</small></h1>
