@@ -95,15 +95,15 @@ function App() {
     if (isexist) {
       toast.error('Alrady Selected This Player');
     } else {
-      if (freeClaim == 0 && freeClaim < Player.price) {
+      if (freeClaim == 0 && freeClaim !== isNaN) {
         toast.error("Claim free Credit Then Chooes Players")
       }
       else {
-        setfreeClaim(freeClaim - Player.price)
+      
 
         if (selectedPlayer.length <= 5) {
-
           const newselectedPlayer = [...selectedPlayer, Player];
+          setfreeClaim(freeClaim - Player.price)
           setSelectedPlayer(newselectedPlayer)
         } else {
           toast.error('Alrady 6 Player Are Selected')
