@@ -32,7 +32,7 @@ const Footer = ({ coins }) => {
                                 type="text"
                                 placeholder="username@site.com"
                                 class="input input-bordered join-item text-black" />
-                            <button class="btn btn-primary join-item">Subscribe</button>
+                            <button class="btn hover:bg-[#E7FE29] border-2 border-b-emerald-400 join-item">Subscribe</button>
                         </div>
                     </fieldset>
                 </div>
