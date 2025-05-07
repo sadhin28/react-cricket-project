@@ -14,9 +14,7 @@ const Footer = ({ coins }) => {
                 <div className=" mt-10 mb-10 grid grid-cols-2  gap-10 md:flex md:justify-between">
                     <nav className="w-30 lg:w-90 text-justify">
                         <h6 class="footer-title">About Us</h6>
-                        <p>Welcome to Assemble My Ultimate Dream 11 Cricket Team – your personal fantasy cricket playground built around the pride of Bangladesh cricket!
-
-                            We’re not just a website – we’re a tribute to Bangladesh’s finest cricketing talents. Our mission is simple: let fans like you create your dream XI using real stats, player insights, and a budget-friendly selection system. From seasoned stars to rising sensations, we give you full control to build, manage, and enjoy your ultimate cricket squad.</p>
+                        <p>Assemble My Ultimate Dream 11 Cricket Team lets you build your fantasy squad with top Bangladeshi cricketers. Choose players, manage coins, and compete using real stats. Experience the thrill of strategy, passion, and cricket—all in one place!</p>
                     </nav>
                     <nav className="w-30 lg:w-90 text-justify">
                         <h6 class="footer-title">Our Goal</h6>
