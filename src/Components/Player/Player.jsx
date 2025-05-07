@@ -22,7 +22,7 @@ const Player = ({ allplayers,handelSelectedPlayers }) => {
                     <p>{about}</p>
                     <div className="card-actions justify-end">
                        
-                        <button onClick={()=>handelSelectedPlayers(allplayers)} className="btn badge badge-outline p-5">Choose Player</button>
+                        <button  onClick={()=>handelSelectedPlayers(allplayers)} className=" hover:bg-[] btn badge badge-outline p-5">Choose Player</button>
                        
                     </div>
                    
