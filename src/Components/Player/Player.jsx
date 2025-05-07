@@ -23,9 +23,9 @@ const Player = ({ allplayers,handelSelectedPlayers }) => {
                     <div className="card-actions justify-end">
                        
                         <button onClick={()=>handelSelectedPlayers(allplayers)} className="btn badge badge-outline p-5">Choose Player</button>
-                       
+                        <ToastContainer position='top-center'/>
                     </div>
-                    <ToastContainer position='top-center'/>
+                   
                 </div>
             </div>
         </div>

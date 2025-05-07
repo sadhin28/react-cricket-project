@@ -6,7 +6,7 @@ import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
-
+  
     //fetch allimg json file
     const [allimg,setAllimg]=useState(arguments);
     const [coins,setCoins]=useState(arguments);
@@ -42,10 +42,9 @@ function App() {
     
     const newfreeclaim=freeClaim + 50000;
     setfreeClaim(newfreeclaim)
-   
-    
+    toast.success("Claim Successfull")
   }
-  
+
 
   //button goggle 
   const [isactive,setisactive]=useState({
