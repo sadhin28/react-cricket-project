@@ -84,16 +84,20 @@ function App() {
    
    const [selectedPlayer,setSelectedPlayer]=useState([]);
    
-    console.log(selectedPlayer)
+    console.log(selectedPlayer.length)
    const handelSelectedPlayers =(Player)=>{
     const isexist = selectedPlayer.find(p=>p.id == Player.id);
    
     if(isexist){
       toast.error('Alrady Selected This Player');
     }else{
+      if(selectedPlayer.length <=5){
+        const newselectedPlayer =[...selectedPlayer,Player] ;
+        setSelectedPlayer(newselectedPlayer)
+      }else{
+        toast.error('Alrady 6 Player Are Selected')
+      }
       
-      const newselectedPlayer =[...selectedPlayer,Player] ;
-      setSelectedPlayer(newselectedPlayer)
     }
 
 
