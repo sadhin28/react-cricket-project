@@ -3,7 +3,7 @@ import './App.css'
 import HeroSection from './Components/HeroSection/HeroSection'
 import Navbar from './Components/Navbar/Navbar'
 import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
 
@@ -39,8 +39,11 @@ function App() {
   //increment Claim free credit
   const [freeClaim,setfreeClaim]=useState(0)
   const handelfreeClaim=()=>{
+    
     const newfreeclaim=freeClaim + 50000;
     setfreeClaim(newfreeclaim)
+   
+    
   }
   
 
@@ -75,28 +78,38 @@ function App() {
       })
    },[])
    //handel selected player
-   const handelDelatePlayer =(id)=>{
-    
+   const handelDelatePlayer =(id,price)=>{
+    setfreeClaim(freeClaim + price)
        const newPlayer=selectedPlayer.filter((p)=>p.id !== id);
        setSelectedPlayer(newPlayer)
    }
  
    
    const [selectedPlayer,setSelectedPlayer]=useState([]);
-   
-    console.log(selectedPlayer.length)
+  
+
    const handelSelectedPlayers =(Player)=>{
-    const isexist = selectedPlayer.find(p=>p.id == Player.id);
    
+    const isexist = selectedPlayer.find(p=>p.id == Player.id);
+    
     if(isexist){
       toast.error('Alrady Selected This Player');
     }else{
-      if(selectedPlayer.length <=5){
-        const newselectedPlayer =[...selectedPlayer,Player] ;
-        setSelectedPlayer(newselectedPlayer)
-      }else{
-        toast.error('Alrady 6 Player Are Selected')
+      if(freeClaim == 0 && freeClaim < Player.price){
+        toast.error("Claim free Credit and Chooes Players")
       }
+      else{
+         setfreeClaim(freeClaim - Player.price)
+        if(selectedPlayer.length <=5){
+          
+          const newselectedPlayer =[...selectedPlayer,Player] ;
+          setSelectedPlayer(newselectedPlayer)
+        }else{
+          toast.error('Alrady 6 Player Are Selected')
+        }
+      }
+      
+     
       
     }
 

@@ -1,7 +1,7 @@
 
 const SelectPlayer = ({selectPlayer,handelDelatePlayer}) => {
-   const {name,image_url,about,id}=(selectPlayer)
-
+   const {name,image_url,about,id,price}=(selectPlayer)
+  
     return (
         <div className="md:text-xl text-sm">
             <div class="card w-full bg-base-100 card-md shadow-sm">
@@ -14,7 +14,7 @@ const SelectPlayer = ({selectPlayer,handelDelatePlayer}) => {
                         </div>
                     </div>
                     <div class="justify-end card-actions">
-                        <button onClick={()=>handelDelatePlayer(id)} class="btn btn-primary">Delate</button>
+                        <button onClick={()=>handelDelatePlayer(id,price)} class="btn btn-primary">Delate</button>
                     </div>
                 </div>
             </div>

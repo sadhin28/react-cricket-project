@@ -15,7 +15,7 @@ const Navbar = ({freeClaim,allimg,coins}) => {
                         <li>Teams</li>
                         <li>Schedules</li>
                          </div>
-                        <p className="text-center"><small className=" md:p-4 border-2 rounded-2xl place-items-center  w-40 md:w-50  mx-auto  flex justify-center">{freeClaim} Coin <img className="w-4 mx-2 " src={coin.coin} alt="" /></small></p>
+                        <p className="text-center"><small className=" md:p-2 border-2 rounded-2xl place-items-center  w-40 md:w-50  mx-auto  flex justify-center">{freeClaim} Coin <img className="w-4 mx-2 " src={coin.coin} alt="" /></small></p>
                 </ul>
                 
                
