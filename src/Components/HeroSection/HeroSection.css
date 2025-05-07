@@ -1,5 +1,5 @@
 #heroSection{
     background-image: url('/src/assets/bg-shadow.png');
     background-repeat: no-repeat;
-   
+    object-fit: cover;
 }

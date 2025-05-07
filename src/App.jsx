@@ -6,6 +6,7 @@ import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
 import { toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Components/Footer/Footer';
+import Subscribe from './Components/SubscribeSection/Subscribe';
 function App() {
 
   //fetch allimg json file
@@ -126,6 +127,9 @@ function App() {
        </div>
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
       <AvailablePlayers  handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
+      <div>
+           <Subscribe></Subscribe>
+      </div>
       <Footer coins={coins}></Footer>
       
       
