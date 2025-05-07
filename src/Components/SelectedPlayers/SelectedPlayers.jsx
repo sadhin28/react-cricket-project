@@ -12,7 +12,10 @@ const SelectedPlayers = ({selectedPlayer,handelDelatePlayer,handleisActive,isact
                        isactive.available?'':selectedPlayer.map(selectPlayer=><SelectPlayer key={selectPlayer.id} handelDelatePlayer={handelDelatePlayer} selectPlayer={selectPlayer} ></SelectPlayer>)
                     }
                    <div className="">
-                      <button onClick={()=>handleisActive('available')} className={`${isactive.available?'btn':'active btn'} font-black p-5 rounded-tr-2xl rounded-br-2xl`}>Add More Player</button>
+                     {
+                         selectedPlayer.length == false ?'':<button onClick={()=>handleisActive('available')} className={`${isactive.available?'btn':'active btn'} font-black p-5 rounded-tr-2xl rounded-br-2xl`}>Add More Player</button>
+                     }
+                      
                   </div>
             </div>
              
