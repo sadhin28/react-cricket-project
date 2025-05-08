@@ -132,7 +132,7 @@ function App() {
    const data = document.getElementById('inputValue').value
    const email =localStorage.getItem('email')
    setemaildata(email)
-   if(data !== 0 || data !== null){
+   if(data !== 0 && isNaN(data)){
     localStorage.setItem('email',data)
     
     document.getElementById('inputValue').value=''
