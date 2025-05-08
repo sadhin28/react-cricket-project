@@ -124,10 +124,7 @@ function App() {
 
   }
 //handel subscrive local store delate
-const cancleSubscrive=()=>{
-  
-  localStorage.clear()
-}
+
 
   //handel subscribe section
 
