@@ -74,7 +74,7 @@ BPL-DREAM 11 allows users to choose cricket players within a coin-based budget. 
 ### Clone and Run
 
 ```bash
-git clone https://github.com/your-username/bpl-dream11.git
+git clone https://github.com/sadhin28/react-cricket-project.git
 cd bpl-dream11
 npm install
 npm run dev
