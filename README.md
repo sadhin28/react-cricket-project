@@ -78,4 +78,3 @@ git clone https://github.com/sadhin28/react-cricket-project.git
 cd bpl-dream11
 npm install
 npm run dev
->>>>>>> ad43331c3c9ae1fefde1475affa7ad9b2676d9cb
