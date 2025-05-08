@@ -1,7 +1,8 @@
 import './Subscribe.css'
 
-const Subscribe = ({handelSubscribe,emaildata}) => {
+const Subscribe = ({handelSubscribe}) => {
  const e = localStorage.getItem('email')
+ const d=`Subscribe By : ${e}`
     return (
         <div id='subscribe' className='border border-blue-300
           h-79  w-9/12 mx-auto rounded-2xl object-cover
@@ -22,7 +23,7 @@ const Subscribe = ({handelSubscribe,emaildata}) => {
                     className="input rounded-tl-2xl rounded-bl-2xl md:w-100 p-8 input-bordered join-item text-black" />
                 <button onClick={handelSubscribe} className="btn rounded-tr-2xl rounded-br-2xl p-8 hover:bg-[#E7FE29] border-2  join-item">Subscribe</button>
                 </div>
-                 <h1>Subscri By : {e}</h1>
+                 <h1>{d}</h1>
             </div>
               
         </div>

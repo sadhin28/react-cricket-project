@@ -133,6 +133,7 @@ function App() {
    const email =localStorage.getItem('email')
    setemaildata(email)
    if(data !== 0 && isNaN(data)){
+    
     localStorage.setItem('email',data)
     
     document.getElementById('inputValue').value=''
