@@ -124,6 +124,12 @@ function App() {
 
   }
 
+
+  //handel subscribe section
+
+ const handelSubscribe =()=>{
+    alert('hi')
+ }
   return (
     <div className='max-w-11/12 mx-auto'>
 
@@ -133,7 +139,7 @@ function App() {
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
       <AvailablePlayers  handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
       <div>
-           <Subscribe></Subscribe>
+           <Subscribe handelSubscribe={handelSubscribe}></Subscribe>
       </div>
       <Footer coins={coins}></Footer>
       
