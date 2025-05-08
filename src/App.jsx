@@ -42,7 +42,7 @@ function App() {
   const [freeClaim, setfreeClaim] = useState(0)
   const handelfreeClaim = () => {
 
-    const newfreeclaim = freeClaim + 50000;
+    const newfreeclaim = freeClaim + 30000;
     
     setfreeClaim(newfreeclaim)
     toast.success("Claim Successfull")
@@ -92,24 +92,29 @@ function App() {
 
   const handelSelectedPlayers = (Player) => {
 
+   
     const isexist = selectedPlayer.find(p => p.id == Player.id);
 
     if (isexist) {
       toast.error('player already selected');
     } else {
-      if (freeClaim == 0 && freeClaim !== isNaN) {
+      if (freeClaim == 0 && freeClaim !== isNaN ) {
         toast.error("Claim free Credit Then Chooes Players")
       }
       else {
-      
-
-        if (selectedPlayer.length <= 5) {
-          const newselectedPlayer = [...selectedPlayer, Player];
-          setfreeClaim(freeClaim - Player.price)
-          setSelectedPlayer(newselectedPlayer)
-        } else {
-          toast.error('6 player already selected')
+        if(Player.price <= freeClaim){
+          if (selectedPlayer.length <= 5) {
+            const newselectedPlayer = [...selectedPlayer, Player];
+            setfreeClaim(freeClaim - Player.price)
+            setSelectedPlayer(newselectedPlayer)
+          } else {
+            toast.error('6 player already selected')
+          }
+        }else{
+          toast.error("You do not have enough coins. Please collect free coins")
         }
+
+        
       }
 
 
@@ -134,7 +139,7 @@ function App() {
       
       
       
-      <ToastContainer position='top-center'autoClose={1200}/>
+      <ToastContainer position='top-center'autoClose={1500}/>
     </div>
   
   )
