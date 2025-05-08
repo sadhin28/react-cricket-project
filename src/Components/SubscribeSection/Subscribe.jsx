@@ -13,10 +13,11 @@ const Subscribe = ({handelSubscribe}) => {
                 <p className='md:text-2xl'>Get the latest updates and news right in your inbox!</p>
                 </div>
                 <div className='join mx-auto mt-5'>
-                   
+                
                 <input
+                    id='inputValue'
                     type="email"
-                    id='inputEmail'
+                   
                     placeholder="Subscribe By Email@"
                     className="input rounded-tl-2xl rounded-bl-2xl md:w-100 p-8 input-bordered join-item text-black" />
                 <button onClick={handelSubscribe} className="btn rounded-tr-2xl rounded-br-2xl p-8 hover:bg-[#E7FE29] border-2  join-item">Subscribe</button>

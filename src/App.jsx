@@ -128,7 +128,17 @@ function App() {
   //handel subscribe section
 
  const handelSubscribe =()=>{
-    alert('hi')
+   const data = document.getElementById('inputValue').value
+  
+   if(data !== isNaN && data.matches('@')){
+    localStorage.setItem('email',data)
+    console.log(data)
+    document.getElementById('inputValue').value=''
+    toast.success('Thank You for Subscribe')
+     
+   }else{
+     toast.error('Place enter valid Email')
+   }
  }
   return (
     <div className='max-w-11/12 mx-auto'>
