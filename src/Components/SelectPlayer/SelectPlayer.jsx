@@ -14,7 +14,7 @@ const SelectPlayer = ({selectPlayer,handelDelatePlayer}) => {
                         </div>
                     </div>
                     <div class="justify-end card-actions">
-                        <button onClick={()=>handelDelatePlayer(id,price)} class="hover:bg-[#E7FE29] btn btn-primary bg-white text-black border-black rounded-xl">Delate</button>
+                        <button onClick={()=>handelDelatePlayer(id,price)} class="hover:bg-[#E7FE29] btn btn-primary bg-white text-black border-black rounded-xl">Remove</button>
                     </div>
                 </div>
             </div>
