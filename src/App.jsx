@@ -126,18 +126,21 @@ function App() {
 
 
   //handel subscribe section
-
+ const [emaildata,setemaildata]=useState([])
+//  console.log((emaildata))
  const handelSubscribe =()=>{
    const data = document.getElementById('inputValue').value
-  
-   if(data !== isNaN && data.matches('@')){
+   const email =localStorage.getItem('email')
+   setemaildata(email)
+   if(data !== 0 || data !== null){
     localStorage.setItem('email',data)
-    console.log(data)
+    
     document.getElementById('inputValue').value=''
     toast.success('Thank You for Subscribe')
      
    }else{
-     toast.error('Place enter valid Email')
+    toast.error('Place enter valid Email')
+     
    }
  }
   return (
@@ -149,7 +152,7 @@ function App() {
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
       <AvailablePlayers  handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
       <div>
-           <Subscribe handelSubscribe={handelSubscribe}></Subscribe>
+           <Subscribe emaildata={emaildata}  handelSubscribe={handelSubscribe}></Subscribe>
       </div>
       <Footer coins={coins}></Footer>
       
