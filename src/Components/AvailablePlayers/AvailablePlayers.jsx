@@ -9,7 +9,7 @@ const AvailablePlayers = ({handleisActive,isactive,allplayers,handelSelectedPlay
             <div className="  mt-10 mb-10 flex  font-black justify-between text-sm lg:text-2xl md:text-xl">
              <div>
                 {
-                    isactive.available?`Available Players(${allplayers.length})`:`Selected Player (${selectedPlayer.length}/6)`
+                    isactive.available?`Available Players(${allplayers.length - selectedPlayer.length})`:`Selected Player (${selectedPlayer.length}/6)`
                 }
              </div>
             <div className="join">
