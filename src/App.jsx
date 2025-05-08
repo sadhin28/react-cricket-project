@@ -130,13 +130,11 @@ const cancleSubscrive=()=>{
 }
 
   //handel subscribe section
- const [emaildata,setemaildata]=useState([])
- console.log((emaildata))
+
  const handelSubscribe =()=>{
    
    const data = document.getElementById('inputValue').value
-   const email =localStorage.getItem('email')
-   setemaildata(email)
+
    if(data !== 0 && isNaN(data)){
     
     localStorage.setItem('email',data)
@@ -158,7 +156,7 @@ const cancleSubscrive=()=>{
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
       <AvailablePlayers  handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
       <div>
-           <Subscribe cancleSubscrive={cancleSubscrive} emaildata={emaildata}  handelSubscribe={handelSubscribe}></Subscribe>
+           <Subscribe   handelSubscribe={handelSubscribe}></Subscribe>
       </div>
       <Footer coins={coins}></Footer>
       
