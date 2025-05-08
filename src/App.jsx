@@ -123,12 +123,17 @@ function App() {
 
 
   }
-
+//handel subscrive local store delate
+const cancleSubscrive=()=>{
+  
+  localStorage.clear()
+}
 
   //handel subscribe section
  const [emaildata,setemaildata]=useState([])
-//  console.log((emaildata))
+ console.log((emaildata))
  const handelSubscribe =()=>{
+   
    const data = document.getElementById('inputValue').value
    const email =localStorage.getItem('email')
    setemaildata(email)
@@ -153,7 +158,7 @@ function App() {
       <HeroSection heroPhoto={heroPhoto} handelfreeClaim={handelfreeClaim}></HeroSection>
       <AvailablePlayers  handelDelatePlayer={handelDelatePlayer} selectedPlayer={selectedPlayer} handelSelectedPlayers={handelSelectedPlayers} allplayers={allplayers} isactive={isactive} handleisActive={handleisActive} ></AvailablePlayers>
       <div>
-           <Subscribe emaildata={emaildata}  handelSubscribe={handelSubscribe}></Subscribe>
+           <Subscribe cancleSubscrive={cancleSubscrive} emaildata={emaildata}  handelSubscribe={handelSubscribe}></Subscribe>
       </div>
       <Footer coins={coins}></Footer>
       
