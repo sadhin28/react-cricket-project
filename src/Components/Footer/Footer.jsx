@@ -5,7 +5,7 @@ const Footer = ({ coins }) => {
     return (
         <div>
 
-            <footer className=" bg-black text-white p-10">
+            <footer className=" rounded-tl-2xl rounded-tr-2xl bg-black text-white p-10">
 
                 <div className="w-20 mx-auto lg:w-30 mt-30">
                     <img src={coins[0].footer_logo} alt="" />
