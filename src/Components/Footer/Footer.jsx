@@ -12,11 +12,11 @@ const Footer = ({ coins }) => {
                 </div>
 
                 <div className=" mt-10 mb-10 grid grid-cols-2  gap-10 md:flex md:justify-between">
-                    <nav className="w-30 lg:w-90 text-justify">
+                    <nav className=" text-sm w-30 lg:w-90 text-justify">
                         <h6 className="footer-title">About Us</h6>
                         <p>Assemble My Ultimate Dream 11 Cricket Team lets you build your fantasy squad with top Bangladeshi cricketers. Choose players, manage coins, and compete using real stats. Experience the thrill of strategy, passion, and cricket—all in one place!</p>
                     </nav>
-                    <nav className="w-30 lg:w-90 text-justify">
+                    <nav className="text-sm w-30 lg:w-90 text-justify">
                         <h6 className="footer-title">Our Goal</h6>
                          <p>
                          To bring fans closer to the action by letting them experience team-building through the lens of data, strategy, and love for Bangladeshi cricket.
@@ -24,10 +24,10 @@ const Footer = ({ coins }) => {
                         Let the game begin – build your dream team now and compete with passion!
                          </p>
                     </nav>
-                    <fieldset className="w-80">
+                    <fieldset className="w-80 text-sm">
                     <h6 className="footer-title">Subscribe</h6>
                         <label>Subscribe to our newsletter for the latest updates.</label>
-                        <div className="join">
+                        <div className="join mt-2">
                             <input
                                 type="text"
                                 placeholder="username@site.com"
