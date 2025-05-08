@@ -12,7 +12,7 @@ const AvailablePlayers = ({handleisActive,isactive,allplayers,handelSelectedPlay
                     isactive.available?`Available Players(${allplayers.length})`:`Selected Player (${selectedPlayer.length}/6)`
                 }
              </div>
-            <div className="join ">
+            <div className="join">
                 <button onClick={()=>handleisActive('available')} className={`${isactive.available?'btn active':'btn'} font-black p-5 rounded-tl-2xl rounded-bl-2xl`}>Available</button>
                 <button  onClick={()=>handleisActive('selected')} className={`${isactive.available?'btn':'active btn'} font-black p-5 rounded-tr-2xl rounded-br-2xl`}>Selected ({selectedPlayer.length})</button>
 
